@@ -8,15 +8,16 @@ RUN \
   curl -Ls https://git.io/sbt > /usr/bin/sbt && \
   chmod 0755 /usr/bin/sbt
 
-ARG SCALA_VERSION=2.12.12
+ARG SCALA_VERSION=2.13.3
 ARG SBT_VERSION=1.3.13
 
 RUN \
   # Cache sbt and scala jars
   mkdir -p /root/cache/project && \
   mkdir -p /root/cache/src/main/scala && \
-  echo "sbt.version=${SBT_VERSION}" >> /root/cache/project/build.properties && \
+  echo "sbt.version=${SBT_VERSION}" > /root/cache/project/build.properties && \
+  echo "name := \"cache\"\n\nversion := \"1.0\"\n\nscalaVersion := \"${SCALA_VERSION}\"\n" > /root/cache/build.sbt && \
   touch /root/cache/src/main/scala/Cache.scala && \
   cd /root/cache && \
-  sbt -v -scala-version ${SCALA_VERSION} compile && \
+  sbt -v compile && \
   rm -r /root/cache
