@@ -4,13 +4,13 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN \
   apt-get update && \
-  apt-get -qy install curl zip git openjdk-11-jdk=11.0.9+11-0ubuntu1~20.04 && \
+  apt-get -qy install curl zip git openjdk-11-jdk=11.0.10+9-0ubuntu1~20.04 && \
   curl -Ls https://git.io/sbt > /usr/bin/sbt && \
   chmod 0755 /usr/bin/sbt
 
 ARG SCALA_212_VERSION=2.12.12
 ARG SCALA_213_VERSION=2.13.3
-ARG SBT_VERSION=1.4.1
+ARG SBT_VERSION=1.4.9
 
 RUN \
   # Cache sbt and scala jars
