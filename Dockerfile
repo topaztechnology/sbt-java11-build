@@ -8,9 +8,9 @@ RUN \
   curl -Ls https://git.io/sbt > /usr/bin/sbt && \
   chmod 0755 /usr/bin/sbt
 
-ARG SCALA_212_VERSION=2.12.12
-ARG SCALA_213_VERSION=2.13.3
-ARG SBT_VERSION=1.4.9
+ARG SCALA_212_VERSION=2.12.13
+ARG SCALA_213_VERSION=2.13.5
+ARG SBT_VERSION=1.5.0
 
 RUN \
   # Cache sbt and scala jars

@@ -11,6 +11,7 @@
 | `11.0.8-2.13` | `20.04` | `11.0.8`  |    n/a     | `2.13.3`   | `1.3.13` | [(Dockerfile)](https://github.com/topaztechnology/sbt-java11-build/blob/11.0.8-2.13/Dockerfile) |
 | `11.0.9`      | `20.04` | `11.0.9`  | `2.12.12`  | `2.13.3`   | `1.4.1`  | [(Dockerfile)](https://github.com/topaztechnology/sbt-java11-build/blob/11.0.9/Dockerfile) |
 | `11.0.10`     | `20.04` | `11.0.10` | `2.12.12`  | `2.13.3`   | `1.4.9`  | [(Dockerfile)](https://github.com/topaztechnology/sbt-java11-build/blob/11.0.10/Dockerfile) |
+| `11.0.10_1`   | `20.04` | `11.0.10` | `2.12.13`  | `2.13.5`   | `1.5.0`  | [(Dockerfile)](https://github.com/topaztechnology/sbt-java11-build/blob/11.0.10_1/Dockerfile) |
 
 ## Overview
 
