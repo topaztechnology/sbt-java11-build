@@ -25,7 +25,7 @@ RUN \
   echo "source $SDKMAN_DIR/bin/sdkman-init.sh" > /etc/bash.bashrc
 
 RUN \
-  sdk install java 11.0.13-tem
+  sdk install java 11.0.15-zulu
 
 RUN \
   curl -Ls https://git.io/sbt > /usr/bin/sbt && \
